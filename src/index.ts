@@ -7,6 +7,8 @@ import { createPurchase } from './endpoints/createPuschase';
 dotenv.config()
 const app = express()
 
+const port = process.env.DB_PORT  || 3003
+
 app.use(express.json())
 app.use(cors())
 
@@ -14,6 +16,6 @@ app.get('/products',getProducts)
 
 app.post('/purchases',createPurchase)
 
-app.listen(3003, () => {
-    console.log('The server is running in http://localhost:3003')
+app.listen(port, () => {
+    console.log(`The server is running in http://localhost:${port}`)
 })
