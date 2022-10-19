@@ -19,7 +19,6 @@ export const createPurchase = async (req:Request,res:Response) =>{
         const date:string = req.body.date as string
         const purchasedItems:Sale[] = req.body.purchasedItems
         const purchaseId = idGen()
-        
         if(!name){
             statusCode = 412
             throw new Error('É necessário informar o nome do cliente.')
