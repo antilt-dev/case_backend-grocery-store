@@ -1,7 +1,8 @@
-import { BaseDatabase } from "./db";
+import { PurchaseRepository } from "../business/PurchaseRepository";
+import { BaseDatabase } from "./BaseDatabase";
 import { TABLE_PURCHASES } from "./TABLE_NAMES";
 
-export class PurchaseDB extends BaseDatabase{
+export class PurchaseDatabase extends BaseDatabase implements PurchaseRepository{
     public async createPurchase(
         id:string,
         name:string,

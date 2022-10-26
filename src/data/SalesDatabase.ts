@@ -1,7 +1,8 @@
-import { BaseDatabase } from "./db";
+import { SaleRepository } from "../business/SaleRepository";
+import { BaseDatabase } from "./BaseDatabase";
 import { TABLE_SALES } from "./TABLE_NAMES";
 
-export class SalesDB extends BaseDatabase{
+export class SalesDatabase extends BaseDatabase implements SaleRepository{
     public async registerSale(
         purchaseId:string,
         itemId:number,
