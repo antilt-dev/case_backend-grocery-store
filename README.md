@@ -21,7 +21,7 @@
 
 ## 🔗 Link API:
 
-[Link para o site](https://documenter.getpostman.com/view/21020418/2s847PJV6P)
+[Link para documentação da API](https://documenter.getpostman.com/view/21020418/2s8YRjqE9v)
 
 
 ## ✒️ Autor
