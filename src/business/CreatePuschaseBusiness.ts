@@ -18,7 +18,7 @@ export class CreatePurchaseBusiness{
         try{
 
             const {name,date,purchaseItems} = input
-            const purchaseId = idGenerator()
+            const purchaseId:string = idGenerator()
 
             if(!name){
                 statusCode = 412
